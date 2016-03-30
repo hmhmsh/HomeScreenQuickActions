@@ -16,7 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		let homeActions = HomeScreenQuickActions.sharedInstance
+		
+		for _ in 0..<4 {
+			homeActions.addShortCutItem("com.hmhm", localizedTitle: "ずん", localizedSubtitle: "", icon: UIApplicationShortcutIcon(type: UIApplicationShortcutIconType.Add), userInfo: ["name":"ずん"])
+		}
+		
+		UIApplication.sharedApplication().shortcutItems = homeActions.shortCutItems
+		
+
 		return true
+	}
+
+	func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
+		HomeScreenQuickActions.sharedInstance.delegateMethod(application, shortCutItem: shortcutItem)
+		
+		HomeScreenQuickActions.sharedInstance.notificationMethod(application, shortCutItem: shortcutItem, notificationName: "noti")
 	}
 
 	func applicationWillResignActive(application: UIApplication) {

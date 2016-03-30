@@ -12,8 +12,7 @@
 		4D5FCF251CAB873B00AD1F96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5FCF231CAB873B00AD1F96 /* Main.storyboard */; };
 		4D5FCF271CAB873B00AD1F96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5FCF261CAB873B00AD1F96 /* Assets.xcassets */; };
 		4D5FCF2A1CAB873B00AD1F96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5FCF281CAB873B00AD1F96 /* LaunchScreen.storyboard */; };
-		4D5FCF351CAB873C00AD1F96 /* HomeScreenQuickActionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FCF341CAB873C00AD1F96 /* HomeScreenQuickActionsTests.swift */; };
-		4D5FCF401CAB873C00AD1F96 /* HomeScreenQuickActionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FCF3F1CAB873C00AD1F96 /* HomeScreenQuickActionsUITests.swift */; };
+		4D5FCF4F1CAB878A00AD1F96 /* HomeScreenQuickActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FCF4E1CAB878A00AD1F96 /* HomeScreenQuickActions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +41,8 @@
 		4D5FCF291CAB873B00AD1F96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D5FCF2B1CAB873B00AD1F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D5FCF301CAB873C00AD1F96 /* HomeScreenQuickActionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeScreenQuickActionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D5FCF341CAB873C00AD1F96 /* HomeScreenQuickActionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenQuickActionsTests.swift; sourceTree = "<group>"; };
-		4D5FCF361CAB873C00AD1F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D5FCF3B1CAB873C00AD1F96 /* HomeScreenQuickActionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeScreenQuickActionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D5FCF3F1CAB873C00AD1F96 /* HomeScreenQuickActionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenQuickActionsUITests.swift; sourceTree = "<group>"; };
-		4D5FCF411CAB873C00AD1F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5FCF4E1CAB878A00AD1F96 /* HomeScreenQuickActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeScreenQuickActions.swift; path = Source/HomeScreenQuickActions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +73,8 @@
 		4D5FCF131CAB873B00AD1F96 = {
 			isa = PBXGroup;
 			children = (
+				4D5FCF4D1CAB878000AD1F96 /* Source */,
 				4D5FCF1E1CAB873B00AD1F96 /* HomeScreenQuickActions */,
-				4D5FCF331CAB873C00AD1F96 /* HomeScreenQuickActionsTests */,
-				4D5FCF3E1CAB873C00AD1F96 /* HomeScreenQuickActionsUITests */,
 				4D5FCF1D1CAB873B00AD1F96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,22 +102,12 @@
 			path = HomeScreenQuickActions;
 			sourceTree = "<group>";
 		};
-		4D5FCF331CAB873C00AD1F96 /* HomeScreenQuickActionsTests */ = {
+		4D5FCF4D1CAB878000AD1F96 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				4D5FCF341CAB873C00AD1F96 /* HomeScreenQuickActionsTests.swift */,
-				4D5FCF361CAB873C00AD1F96 /* Info.plist */,
+				4D5FCF4E1CAB878A00AD1F96 /* HomeScreenQuickActions.swift */,
 			);
-			path = HomeScreenQuickActionsTests;
-			sourceTree = "<group>";
-		};
-		4D5FCF3E1CAB873C00AD1F96 /* HomeScreenQuickActionsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4D5FCF3F1CAB873C00AD1F96 /* HomeScreenQuickActionsUITests.swift */,
-				4D5FCF411CAB873C00AD1F96 /* Info.plist */,
-			);
-			path = HomeScreenQuickActionsUITests;
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D5FCF221CAB873B00AD1F96 /* ViewController.swift in Sources */,
+				4D5FCF4F1CAB878A00AD1F96 /* HomeScreenQuickActions.swift in Sources */,
 				4D5FCF201CAB873B00AD1F96 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5FCF351CAB873C00AD1F96 /* HomeScreenQuickActionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5FCF401CAB873C00AD1F96 /* HomeScreenQuickActionsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HomeScreenQuickActions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hmhm.HomeScreenQuickActions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +398,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HomeScreenQuickActions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hmhm.HomeScreenQuickActions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
