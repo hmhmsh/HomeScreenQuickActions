@@ -1,5 +1,7 @@
 # HomeScreenQuickActions
 
+iOS9から実装された3DTouchを使用するためのメソッドです
+
 #Usage
 
     AppDelegate.swift
