@@ -1,8 +1,6 @@
 # HomeScreenQuickActions
 
-Welcome to the 3Dtouch wiki!
-
-**HomeScreenQuickActions Usage**
+#Usage
 
     AppDelegate.swift
     
